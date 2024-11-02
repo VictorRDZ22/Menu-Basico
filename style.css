@@ -1,0 +1,41 @@
+body {
+  font-family: Arial;
+  margin: 0; /*Quita o modifica los margenes*/
+}
+a {
+  text-decoration: none;
+  color: red;
+}
+header {
+    display: flex; /* La propiedad Flex organiza de izquierda a derecha */
+    background-color: #edac74;
+    min-height: 70px;
+    justify-content: space-between; /*Se divide de izquierda a derecha*/
+    align-items: center; /*Centra los bloques*/
+    padding: 10px; /*Manda hacia dentro el bloque que se este modificando*/
+}
+.logo {
+  display: flex;
+  align-items: center; 
+}
+.logo img {
+  height: 70px;
+  margin-right: 15px; 
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px; /*Da espacios entre textos*/ 
+
+}
+nav a:hover{
+    color: blue;
+} /*Hover sirve para que al pasar el mouse por encima de el link se pinte dn color*/
+
+@media (max-width: 700px)/*Para modificar como queremos que se vea dependiendo la resolucion de el dispositivo (Tanto movil como de escritorio)*/{
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
